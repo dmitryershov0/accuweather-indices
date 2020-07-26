@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Accuweather.Indices</name>
+    </assembly>
+    <members>
+        <member name="T:Accuweather.Indices.IIndices">
+            <summary>
+            Get Indices information for a specific location.
+            </summary>
+        </member>
+        <member name="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValuesByGroupIndex(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Returns 5 days of daily index data for a specific group of indices, by location key.
+            </summary>
+            <param name="locationKey">Unique ID to search for a specific location.</param>
+            <param name="group">Index group ID.</param>
+            <param name="details">Boolean value specifies whether or not to include full details in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValuesBySpecificIndex(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Returns 5 days of daily index data for a specific index, by location key.
+            </summary>
+            <param name="locationKey">Unique ID to search for a specific location.</param>
+            <param name="specific">Specific Index ID.</param>
+            <param name="details">Boolean value specifies whether or not to include full details in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValues(System.Int32,System.Boolean)">
+            <summary>
+            Returns 5 days of daily index data for all indices, by location key.
+            </summary>
+            <param name="locationKey">Unique ID to search for a specific location.</param>
+            <param name="details">Boolean value specifies whether or not to include full details in the response.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Accuweather.Indices.Indices">
+            <summary>
+            Accuweather Indices Api
+            </summary>
+        </member>
+        <member name="M:Accuweather.Indices.Indices.#ctor(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="apiKey">Api key accuweather.</param>
+            <param name="language">Language.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Accuweather.Indices.Indices.FiveDaysOfDailyIndexValuesByGroupIndex(System.Int32,System.Int32,System.Boolean)">
+            <inheritdoc cref="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValuesByGroupIndex(System.Int32,System.Int32,System.Boolean)"/>
+        </member>
+        <member name="M:Accuweather.Indices.Indices.FiveDaysOfDailyIndexValuesBySpecificIndex(System.Int32,System.Int32,System.Boolean)">
+            <inheritdoc cref="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValuesBySpecificIndex(System.Int32,System.Int32,System.Boolean)"/>
+        </member>
+        <member name="M:Accuweather.Indices.Indices.FiveDaysOfDailyIndexValues(System.Int32,System.Boolean)">
+            <inheritdoc cref="M:Accuweather.Indices.IIndices.FiveDaysOfDailyIndexValues(System.Int32,System.Boolean)"/>
+        </member>
+    </members>
+</doc>
